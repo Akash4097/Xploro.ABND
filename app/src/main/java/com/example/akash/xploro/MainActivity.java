@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         initializeData();
-        adapter = new MyAdapter(myDataSet);
+        adapter = new MainAdapter(myDataSet);
         recyclerView.setAdapter(adapter);
 
     }

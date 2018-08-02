@@ -1,5 +1,6 @@
 package com.example.akash.xploro;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,13 +10,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
-    private ArrayList<City> mDataset;
+class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
+    private ArrayList<City> mDataSet;
 
-    // Provide a reference to the views for each data item
-    // Complex data items may need more than one view per item, and
-    // you provide access to all the views for a data item in a view holder
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         // each data item is just a string in this case
         public TextView textView;
         public ImageView imageView;
@@ -24,16 +22,23 @@ class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             super(v);
             textView = v.findViewById(R.id.thumbnailTextView);
             imageView = v.findViewById(R.id.mainThumbnail);
+            v.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(v.getContext(),TabLayoutActivity.class);
+            v.getContext().startActivity(intent);
         }
     }
 
-    public MyAdapter(ArrayList<City> myDataset) {
-        mDataset = myDataset;
+    public MainAdapter(ArrayList<City> myDataSet) {
+        mDataSet = myDataSet;
     }
 
     @Override
-    public MyAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
-                                                   int viewType) {
+    public MainAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
+                                                     int viewType) {
 
         View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.custom_view, parent, false);
@@ -42,7 +47,7 @@ class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        City city = mDataset.get(position);
+        City city = mDataSet.get(position);
         holder.textView.setText(city.getName());
         holder.imageView.setImageDrawable(city.getThumbnail());
     }
@@ -50,6 +55,6 @@ class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
-        return mDataset.size();
+        return mDataSet.size();
     }
 }
