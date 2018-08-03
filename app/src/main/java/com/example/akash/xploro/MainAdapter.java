@@ -28,6 +28,7 @@ class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(v.getContext(),TabLayoutActivity.class);
+            intent.putExtra("title",textView.getText());
             v.getContext().startActivity(intent);
         }
     }
