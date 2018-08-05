@@ -18,4 +18,5 @@ public class City {
     public Drawable getThumbnail() {
         return thumbnail;
     }
+
 }

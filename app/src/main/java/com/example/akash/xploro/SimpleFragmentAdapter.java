@@ -37,7 +37,7 @@ public class SimpleFragmentAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
 //        if(position == 0){
-//            return "Hotels";
+//            return "Places";
 //        }else if(position == 1){
 //            return "Restaurant";
 //        }else if(position == 2){

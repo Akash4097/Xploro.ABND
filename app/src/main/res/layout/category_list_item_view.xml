@@ -31,28 +31,74 @@
             android:textSize="16sp"
             tools:text="Taj Hotel" />
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content">
+
             <RatingBar
                 android:id="@+id/rating"
+                style="@style/Base.Widget.AppCompat.RatingBar.Small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
                 android:isIndicator="true"
-                android:layout_margin="5dp"
-                style="@style/Base.Widget.AppCompat.RatingBar.Small"
                 android:numStars="5"
-                android:rating="4.4"/>
+                android:rating="4.4" />
+
             <TextView
                 android:id="@+id/rating_value_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
-                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/rating"
                 android:text="0.0"
-                android:textColor="#000"/>
-        </LinearLayout>
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button_more"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="More" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/hidden_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_web"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/web" />
+
+            <Button
+                android:id="@+id/button_direction"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/direction" />
+
+            <Button
+                android:id="@+id/button_phone"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/phone" />
+        </RelativeLayout>
 
     </LinearLayout>
 

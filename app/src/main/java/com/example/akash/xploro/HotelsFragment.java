@@ -19,7 +19,7 @@ public class HotelsFragment extends Fragment {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
-    private ArrayList<Hotels> myDataSet;
+    private ArrayList<Places> myDataSet;
 
 
     public HotelsFragment() {
@@ -46,10 +46,15 @@ public class HotelsFragment extends Fragment {
     }
 
     private void initializeData() {
-        myDataSet.add(new Hotels("Sahara Start Hotel", getResources().getDrawable(R.drawable.sahara_stat_hotel_mumbai),4.4F));
-        myDataSet.add(new Hotels("The Orchid Hotel Mumbai Vile Parle", getResources().getDrawable(R.drawable.orchid_hotel_mumbai),4.2f));
-        myDataSet.add(new Hotels("The Oberoi, Mumbai", getResources().getDrawable(R.drawable.the_oberoi_hotel_mumbai),4.6f));
-        myDataSet.add(new Hotels("Grand Hyatt Mumbai", getResources().getDrawable(R.drawable.grand_hyatt_hotel_mumbai),4.5f));
-        myDataSet.add(new Hotels("Sofitel Mumbai BKC", getResources().getDrawable(R.drawable.sofitel_hotel_mumbai),4.5f));
+        myDataSet.add(new Places("Sahara Start Hotel",
+                                 "5 Star", "http://www.saharastar.com",
+                                 " Opp Domestic Airport, Mumbai, Maharashtra 400099",
+                                  getResources().getDrawable(R.drawable.sahara_stat_hotel_mumbai),4.4F, "022 3980 7444"));
+        myDataSet.add(new Places("The Orchid Hotel Mumbai Vile Parle","5 Start","http://www.orchidhotel.com/mumbai-vile-parle/",
+                                  "70-C, Nehru Road, Near Mumbai Domestic Airport, Vile Parle (E), Mumbai, Maharashtra 400099",
+                                  getResources().getDrawable(R.drawable.orchid_hotel_mumbai),4.2f,"022 2616 4000"));
+        myDataSet.add(new Places("The Oberoi, Mumbai", getResources().getDrawable(R.drawable.the_oberoi_hotel_mumbai),4.6f));
+        myDataSet.add(new Places("Grand Hyatt Mumbai", getResources().getDrawable(R.drawable.grand_hyatt_hotel_mumbai),4.5f));
+        myDataSet.add(new Places("Sofitel Mumbai BKC", getResources().getDrawable(R.drawable.sofitel_hotel_mumbai),4.5f));
     }
 }

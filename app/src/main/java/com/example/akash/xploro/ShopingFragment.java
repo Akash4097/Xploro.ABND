@@ -19,7 +19,7 @@ public class ShopingFragment extends Fragment {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
-    private ArrayList<Hotels> myDataSet;
+    private ArrayList<Places> myDataSet;
 
     public ShopingFragment() {
         // Required empty public constructor
@@ -45,10 +45,10 @@ public class ShopingFragment extends Fragment {
     }
 
     private void initializeData() {
-        myDataSet.add(new Hotels("Inorbit Mall Vashi", getResources().getDrawable(R.drawable.inorbit_mall_mumbai), 4.3F));
-        myDataSet.add(new Hotels("High Street Phoenix", getResources().getDrawable(R.drawable.high_street_phoenix_market_mumbai), 4.5f));
-        myDataSet.add(new Hotels("R City Mall", getResources().getDrawable(R.drawable.r_city_mall_mumbai), 4.5f));
-        myDataSet.add(new Hotels("Infiniti Mall", getResources().getDrawable(R.drawable.infiniti_mall_mumbai), 4.2f));
-        myDataSet.add(new Hotels("Oberoi Mall", getResources().getDrawable(R.drawable.oberoi_mall_mumbai), 4.4f));
+        myDataSet.add(new Places("Inorbit Mall Vashi", getResources().getDrawable(R.drawable.inorbit_mall_mumbai), 4.3F));
+        myDataSet.add(new Places("High Street Phoenix", getResources().getDrawable(R.drawable.high_street_phoenix_market_mumbai), 4.5f));
+        myDataSet.add(new Places("R City Mall", getResources().getDrawable(R.drawable.r_city_mall_mumbai), 4.5f));
+        myDataSet.add(new Places("Infiniti Mall", getResources().getDrawable(R.drawable.infiniti_mall_mumbai), 4.2f));
+        myDataSet.add(new Places("Oberoi Mall", getResources().getDrawable(R.drawable.oberoi_mall_mumbai), 4.4f));
     }
 }

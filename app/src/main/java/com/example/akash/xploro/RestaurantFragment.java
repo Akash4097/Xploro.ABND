@@ -19,7 +19,7 @@ public class RestaurantFragment extends Fragment {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
-    private ArrayList<Hotels> myDataSet;
+    private ArrayList<Places> myDataSet;
 
 
     public RestaurantFragment() {
@@ -46,10 +46,10 @@ public class RestaurantFragment extends Fragment {
     }
 
     private void initializeData() {
-        myDataSet.add(new Hotels("Celini", getResources().getDrawable(R.drawable.celini_restaurant_mumbai), 4.4F));
-        myDataSet.add(new Hotels("ITC Maratha, Pan Asian", getResources().getDrawable(R.drawable.pan_asian_restaurant_mumbai), 4.3f));
-        myDataSet.add(new Hotels("ITC Maratha, Dum Pukht", getResources().getDrawable(R.drawable.dum_pukht_restaurant_mumbai), 4.1f));
-        myDataSet.add(new Hotels("Trishna", getResources().getDrawable(R.drawable.trishna_restaurant_mumbai), 4.5f));
-        myDataSet.add(new Hotels("Mirchi & Mime", getResources().getDrawable(R.drawable.mirchi_n_mime_restaurant_mumbai), 4.5f));
+        myDataSet.add(new Places("Celini", getResources().getDrawable(R.drawable.celini_restaurant_mumbai), 4.4F));
+        myDataSet.add(new Places("ITC Maratha, Pan Asian", getResources().getDrawable(R.drawable.pan_asian_restaurant_mumbai), 4.3f));
+        myDataSet.add(new Places("ITC Maratha, Dum Pukht", getResources().getDrawable(R.drawable.dum_pukht_restaurant_mumbai), 4.1f));
+        myDataSet.add(new Places("Trishna", getResources().getDrawable(R.drawable.trishna_restaurant_mumbai), 4.5f));
+        myDataSet.add(new Places("Mirchi & Mime", getResources().getDrawable(R.drawable.mirchi_n_mime_restaurant_mumbai), 4.5f));
     }
 }

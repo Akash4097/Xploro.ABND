@@ -19,7 +19,7 @@ public class PlaceToVisitFragment extends Fragment {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
-    private ArrayList<Hotels> myDataSet;
+    private ArrayList<Places> myDataSet;
 
     public PlaceToVisitFragment() {
         // Required empty public constructor
@@ -45,10 +45,10 @@ public class PlaceToVisitFragment extends Fragment {
     }
 
     private void initializeData() {
-        myDataSet.add(new Hotels("Gateway of India", getResources().getDrawable(R.drawable.gateway), 4.6F));
-        myDataSet.add(new Hotels("Chhatrapati Shivaji Maharaj Vastu Sangrahalaya", getResources().getDrawable(R.drawable.mumbai_chhatrapati_shivaji_maharaj_vastu_sangralaya), 4.5f));
-        myDataSet.add(new Hotels("Haji Ali Dargah", getResources().getDrawable(R.drawable.haji_ali_mumbai), 4.4f));
-        myDataSet.add(new Hotels("EsselWorld", getResources().getDrawable(R.drawable.esselworld_mumbai), 4.4f));
-        myDataSet.add(new Hotels("Jehangir Art Gallery", getResources().getDrawable(R.drawable.jehanigair_mumbai), 4.5f));
+        myDataSet.add(new Places("Gateway of India", getResources().getDrawable(R.drawable.gateway), 4.6F));
+        myDataSet.add(new Places("Chhatrapati Shivaji Maharaj Vastu Sangrahalaya", getResources().getDrawable(R.drawable.mumbai_chhatrapati_shivaji_maharaj_vastu_sangralaya), 4.5f));
+        myDataSet.add(new Places("Haji Ali Dargah", getResources().getDrawable(R.drawable.haji_ali_mumbai), 4.4f));
+        myDataSet.add(new Places("EsselWorld", getResources().getDrawable(R.drawable.esselworld_mumbai), 4.4f));
+        myDataSet.add(new Places("Jehangir Art Gallery", getResources().getDrawable(R.drawable.jehanigair_mumbai), 4.5f));
     }
 }
