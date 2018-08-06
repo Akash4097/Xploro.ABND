@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cities_card_view_margin">8dp</dimen>
+    <dimen name="cities_card_view_radius">10dp</dimen>
+    <dimen name="cities_text_view_padding">5dp</dimen>
+    <dimen name="cities_text_view_text_size">16sp</dimen>
+    <dimen name="logo_width">350dp</dimen>
+    <dimen name="logo_height">350dp</dimen>
+    <dimen name="logo_margin_left">32dp</dimen>
+    <dimen name="logo_margin_bottom">32dp</dimen>
+    <dimen name="places_card_view_margin">8dp</dimen>
+    <dimen name="places_card_view_radius">2dp</dimen>
+    <dimen name="place_text_view_padding">5dp</dimen>
+    <dimen name="rating_bar_margin_left">5dp</dimen>
+    <dimen name="rating_bar_margin_top">15dp</dimen>
+    <dimen name="rating_value_text_view_margin_left">5dp</dimen>
+    <dimen name="rating_value_text_view_margin_top">15dp</dimen>
+    <dimen name="rating_value_text_view_text_size">12sp</dimen>
+    <dimen name="button_width_height">48dp</dimen>
+    <dimen name="button_margin_left_right">32dp</dimen>
+    <dimen name="button_margin_top">8dp</dimen>
+</resources>

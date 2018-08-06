@@ -53,8 +53,14 @@ public class HotelsFragment extends Fragment {
         myDataSet.add(new Places("The Orchid Hotel Mumbai Vile Parle","5 Start","http://www.orchidhotel.com/mumbai-vile-parle/",
                                   "70-C, Nehru Road, Near Mumbai Domestic Airport, Vile Parle (E), Mumbai, Maharashtra 400099",
                                   getResources().getDrawable(R.drawable.orchid_hotel_mumbai),4.2f,"022 2616 4000"));
-        myDataSet.add(new Places("The Oberoi, Mumbai", getResources().getDrawable(R.drawable.the_oberoi_hotel_mumbai),4.6f));
-        myDataSet.add(new Places("Grand Hyatt Mumbai", getResources().getDrawable(R.drawable.grand_hyatt_hotel_mumbai),4.5f));
-        myDataSet.add(new Places("Sofitel Mumbai BKC", getResources().getDrawable(R.drawable.sofitel_hotel_mumbai),4.5f));
+        myDataSet.add(new Places("The Oberoi, Mumbai","5 Star","https://www.oberoihotels.com/hotels-in-mumbai/?utm_source=GMBlisting&utm_medium=organic",
+                                  "Nariman Point, Mumbai, Maharashtra 400021",getResources().getDrawable(R.drawable.the_oberoi_hotel_mumbai),
+                                 4.6f,"022 6632 5757"));
+        myDataSet.add(new Places("Grand Hyatt Mumbai","5 Star","https://mumbai.grand.hyatt.com/en/hotel/home.html",
+                                 " Bandra Kurla Complex Vicinity, Off Western Express Highway, Santacruz East, Mumbai, Maharashtra 400055",
+                                  getResources().getDrawable(R.drawable.grand_hyatt_hotel_mumbai),4.5f,"022 6676 1234"));
+        myDataSet.add(new Places("Sofitel Mumbai BKC","5 Star","http://www.sofitel-mumbai-bkc.com",
+                                 "C 57, BKC Rd, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051",
+                                  getResources().getDrawable(R.drawable.sofitel_hotel_mumbai),4.5f,"022 6117 5000"));
     }
 }

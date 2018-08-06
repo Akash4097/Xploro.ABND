@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:layout_margin="8dp"
-    app:cardCornerRadius="2dp">
+    android:layout_margin="@dimen/places_card_view_margin"
+    app:cardCornerRadius="@dimen/places_card_view_radius">
 
 
     <LinearLayout
@@ -20,16 +20,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            tools:src="@drawable/sahara_stat_hotel_mumbai" />
+            tools:src="" />
 
-        <TextView
-            android:id="@+id/category_name_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:textColor="#000"
-            android:textSize="16sp"
-            tools:text="Taj Hotel" />
+            <TextView
+                android:id="@+id/category_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/place_text_view_padding"
+                android:textColor="@color/text_view_text_color"
+                android:textSize="@dimen/cities_text_view_text_size"
+                tools:text="" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -41,8 +41,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginLeft="@dimen/rating_bar_margin_left"
+                android:layout_marginTop="@dimen/rating_bar_margin_top"
                 android:isIndicator="true"
                 android:numStars="5"
                 android:rating="4.4" />
@@ -51,12 +51,12 @@
                 android:id="@+id/rating_value_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginLeft="@dimen/rating_value_text_view_margin_left"
+                android:layout_marginTop="@dimen/rating_value_text_view_margin_top"
                 android:layout_toRightOf="@id/rating"
-                android:text="0.0"
-                android:textColor="#000"
-                android:textSize="12sp" />
+                android:text=""
+                android:textColor="@color/text_view_text_color"
+                android:textSize="@dimen/rating_value_text_view_text_size" />
 
             <Button
                 android:id="@+id/button_more"
@@ -64,7 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:text="More" />
+                android:text="@string/more_button_text" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -74,29 +74,29 @@
 
             <Button
                 android:id="@+id/button_web"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="@dimen/button_width_height"
+                android:layout_height="@dimen/button_width_height"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="32dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginLeft="@dimen/button_margin_left_right"
+                android:layout_marginTop="@dimen/button_margin_top"
                 android:background="@drawable/web" />
 
             <Button
                 android:id="@+id/button_direction"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="@dimen/button_width_height"
+                android:layout_height="@dimen/button_width_height"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/button_margin_top"
                 android:background="@drawable/direction" />
 
             <Button
                 android:id="@+id/button_phone"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="@dimen/button_width_height"
+                android:layout_height="@dimen/button_width_height"
                 android:layout_alignParentRight="true"
-                android:layout_marginBottom="8dp"
-                android:layout_marginRight="32dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/button_margin_top"
+                android:layout_marginRight="@dimen/button_margin_left_right"
+                android:layout_marginTop="@dimen/button_margin_top"
                 android:background="@drawable/phone" />
         </RelativeLayout>
 
