@@ -22,16 +22,16 @@ public class TabLayoutActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         ViewPager viewPager = findViewById(R.id.viewPage);
-        SimpleFragmentAdapter adapter = new SimpleFragmentAdapter(this,getSupportFragmentManager());
+        SimpleFragmentAdapter adapter = new SimpleFragmentAdapter(this, getSupportFragmentManager());
         viewPager.setAdapter(adapter);
         TabLayout tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
         tabLayout.getTabAt(0).setIcon(R.drawable.hotel);
         tabLayout.getTabAt(1).setIcon(R.drawable.restaurant);
-        tabLayout.getTabAt(2).setIcon(R.drawable.shopping_mall);
-        tabLayout.getTabAt(3).setIcon(R.drawable.others_places);
-        this.setTitle(intent.getStringExtra("title"));
+        tabLayout.getTabAt(2).setIcon(R.drawable.shopping);
+        tabLayout.getTabAt(3).setIcon(R.drawable.map);
+        this.setTitle(intent.getStringExtra(getResources().getString(R.string.title)));
 
     }
 

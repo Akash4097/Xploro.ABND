@@ -27,8 +27,8 @@ class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
 
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(v.getContext(),TabLayoutActivity.class);
-            intent.putExtra("title",textView.getText());
+            Intent intent = new Intent(v.getContext(), TabLayoutActivity.class);
+            intent.putExtra(v.getContext().getResources().getString(R.string.title), textView.getText());
             v.getContext().startActivity(intent);
         }
     }
@@ -53,7 +53,6 @@ class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         holder.imageView.setImageDrawable(city.getThumbnail());
     }
 
-    // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
         return mDataSet.size();

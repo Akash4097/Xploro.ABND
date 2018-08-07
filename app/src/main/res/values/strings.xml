@@ -4,4 +4,163 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="more_button_text">More</string>
+    <string name="title">title</string>
+    <string name="geo_data">geo:0,0?q=</string>
+    <string name="package_name">com.google.android.apps.maps</string>
+    <string name="warning_msg">You Don\'t have specific app to open this intent</string>
+    <string name="phone_prefix">tel:</string>
+
+    <string-array name="cities">
+        <item>Mumbai</item>
+        <item>Delhi</item>
+        <item>Bangalore</item>
+        <item>Kolkata</item>
+        <item>Chennai</item>
+        <item>Agra</item>
+        <item>Ahmedabad</item>
+        <item>Hyderabad</item>
+        <item>Surat</item>
+        <item>Pune</item>
+        <item>Bhopal</item>
+    </string-array>
+
+    <string-array name="Sahara_Hotel">
+        <item>Sahara Star Hotel</item>
+        <item>http://www.saharastar.com</item>
+        <item>Opp Domestic Airport, Mumbai, Maharashtra 400099</item>
+        <item>022 3980 7444</item>
+    </string-array>
+
+    <string-array name="Orchid_Hotel">
+        <item>The Orchid Hotel Mumbai Vile Parle</item>
+        <item>http://www.orchidhotel.com/mumbai-vile-parle/</item>
+        <item>70-C, Nehru Road, Near Mumbai Domestic Airport, Vile Parle (E), Mumbai, Maharashtra 400099</item>
+        <item>022 2616 4000</item>
+    </string-array>
+
+    <string-array name="Oberoi_Hotel">
+        <item>The Oberoi, Mumbai</item>
+        <item>https://www.oberoihotels.com/hotels-in-mumbai/?utm_source=GMBlisting&amp;utm_medium=organic</item>
+        <item>Nariman Point, Mumbai, Maharashtra 400021</item>
+        <item>022 6632 5757</item>
+    </string-array>
+
+    <string-array name="Hyatt_Hotel">
+        <item>Grand Hyatt Mumbai</item>
+        <item>https://mumbai.grand.hyatt.com/en/hotel/home.html</item>
+        <item> Bandra Kurla Complex Vicinity, Off Western Express Highway, Santacruz East, Mumbai, Maharashtra 400055</item>
+        <item>022 6676 1234</item>
+    </string-array>
+
+    <string-array name="Sofitel_Hotel">
+        <item>Sofitel Mumbai BKC</item>
+        <item>http://www.sofitel-mumbai-bkc.com</item>
+        <item>C 57, BKC Rd, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051</item>
+        <item>022 6117 5000</item>
+    </string-array>
+
+    <string-array name="Celini_Restaurant">
+        <item>Celini</item>
+        <item>https://mumbai.grand.hyatt.com/en/hotel/dining/Celini.html</item>
+        <item>BKC Vicinity, Off Western Express Highway, Santacruz East, Mumbai, Maharashtra 400055</item>
+        <item>022 6676 1149</item>
+    </string-array>
+
+    <string-array name="PanAsian_Restaurant">
+        <item>ITC Maratha, Pan Asian</item>
+        <item>https://www.itchotels.in/hotels/mumbai/itcmaratha/dining/pan-asian.html?utm_source=google&amp;utm_medium=organic%20Search&amp;utm_term=itcmaratha%20Restaurants&amp;utm_campaign=listing</item>
+        <item> Sahar Airport Road, Near International Airport, Andheri (East), Mumbai, Maharashtra 400099</item>
+        <item>022 2830 3030</item>
+    </string-array>
+
+    <string-array name="Dum_Restaurant">
+        <item>ITC Maratha, Dum Pukht</item>
+        <item>https://www.itchotels.in/hotels/mumbai/itcmaratha/dining/dum-pukht.html?utm_source=google&amp;utm_medium=organic%20Search&amp;utm_term=itcmaratha%20Restaurants&amp;utm_campaign=listing</item>
+        <item>Lobby Level, ITC Maratha, Sahar Airport Road, Near International Airport, Andheri East, Mumbai, Maharashtra 400099</item>
+        <item>022 2830 3030</item>
+    </string-array>
+
+    <string-array name="Trishna_Restaurant">
+        <item>Trishna</item>
+        <item>http://trishna.co.in</item>
+        <item>7, Saibaba Rd, Kala Ghoda, Fort, Mumbai, Maharashtra 400001</item>
+        <item>022 2270 3213</item>
+    </string-array>
+
+    <string-array name="Mirchi_Restaurant">
+        <item>Mirchi &amp; Mime</item>
+        <item>http://mirchiandmime.com/home/</item>
+        <item>Trans Ocean House, Hiranandani Gardens, MHADA Colony 19, Powai, Mumbai, Maharashtra 400076</item>
+        <item>022 4141 5151</item>
+    </string-array>
+
+    <string-array name="Inorbit_Mall">
+        <item>Inorbit Mall Vashi</item>
+        <item>https://www.inorbit.in</item>
+        <item>Plot No 39/1, Sector 30A, Vashi, Opp Vashi Railway Station, Navi Mumbai, Maharashtra 400705</item>
+        <item>022 6777 7666</item>
+    </string-array>
+
+    <string-array name="Phoenix_Mall">
+        <item>High Street Phoenix</item>
+        <item>http://www.highstreetphoenix.com</item>
+        <item>462, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013</item>
+        <item>022 4333 9994</item>
+    </string-array>
+
+    <string-array name="City_Mall">
+        <item>R City Mall</item>
+        <item>http://www.rcity.co.in</item>
+        <item> Lal Bahadur Shastri Road, Amrut Nagar, Ghatkopar West, Mumbai, Maharashtra 400086</item>
+        <item>022 6775 5833</item>
+    </string-array>
+
+    <string-array name="Infiniti_Mall">
+        <item>Infiniti Mall</item>
+        <item>http://www.infinitimall.com</item>
+        <item>New Link Road, Oshiwara, Andheri West, Mumbai, Maharashtra 400053</item>
+        <item>022 4244 0000</item>
+    </string-array>
+
+    <string-array name="Oberoi_Mall">
+        <item>Oberoi Mall</item>
+        <item>https://www.oberoimall.com</item>
+        <item>Oberoi Garden City, Western Express Hwy, Yashodham, Goregaon East, Mumbai, Maharashtra 400063</item>
+        <item>022 4099 0888</item>
+    </string-array>
+
+    <string-array name="Gateway_of_India">
+        <item>Gateway of India</item>
+        <item>https://www.mumbai.org.uk/gate-way-of-india.html</item>
+        <item>Apollo Bandar, Colaba, Mumbai, Maharashtra 400001</item>
+        <item>null</item>
+    </string-array>
+
+    <string-array name="Chhatrapati">
+        <item>Chhatrapati Shivaji Maharaj Vastu Sangrahalaya</item>
+        <item>http://www.csmvs.in</item>
+        <item>159-161, Mahatma Gandhi Road, Kala Ghoda, Fort, Mumbai, Maharashtra 400023</item>
+        <item>022 2284 4484</item>
+    </string-array>
+
+    <string-array name="Haji_Ali_Dargah">
+        <item>Haji Ali Dargah</item>
+        <item>http://www.hajialidargah.in</item>
+        <item>Dargah Rd, Haji Ali, Mumbai, Maharashtra</item>
+        <item>022 2352 9082</item>
+    </string-array>
+
+    <string-array name="EsselWorld">
+        <item>EsselWorld</item>
+        <item>http://www.esselworld.in/travel/home</item>
+        <item>Global Pagoda Road, Essel world Amusement Park, Borivali West, Mumbai, Maharashtra 400091</item>
+        <item>022 2845 2222</item>
+    </string-array>
+
+    <string-array name="Jehangir_Art_Gallery">
+        <item>Jehangir Art Gallery</item>
+        <item>https://jehangirartgallery.com</item>
+        <item>161B, Mahatma Gandhi Road, Kala Ghoda, Fort, Mumbai, Maharashtra 400001</item>
+        <item>022 2284 3989</item>
+    </string-array>
 </resources>

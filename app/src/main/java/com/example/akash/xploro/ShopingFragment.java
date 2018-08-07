@@ -25,7 +25,6 @@ public class ShopingFragment extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -41,24 +40,33 @@ public class ShopingFragment extends Fragment {
         recyclerView.setAdapter(adapter);
 
         return itemView;
-
     }
 
     private void initializeData() {
-        myDataSet.add(new Places("Inorbit Mall Vashi",null,"https://www.inorbit.in",
-                                 "Plot No 39/1, Sector 30A, Vashi, Opp Vashi Railway Station, Navi Mumbai, Maharashtra 400705",
-                                  getResources().getDrawable(R.drawable.inorbit_mall_mumbai), 4.3F,"022 6777 7666"));
-        myDataSet.add(new Places("High Street Phoenix",null,"http://www.highstreetphoenix.com",
-                                 "462, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013",
-                                  getResources().getDrawable(R.drawable.high_street_phoenix_market_mumbai), 4.5f,"022 4333 9994"));
-        myDataSet.add(new Places("R City Mall",null,"http://www.rcity.co.in",
-                                 " Lal Bahadur Shastri Road, Amrut Nagar, Ghatkopar West, Mumbai, Maharashtra 400086",
-                                  getResources().getDrawable(R.drawable.r_city_mall_mumbai), 4.5f,"022 6775 5833"));
-        myDataSet.add(new Places("Infiniti Mall",null,"http://www.infinitimall.com",
-                                 "New Link Road, Oshiwara, Andheri West, Mumbai, Maharashtra 400053",
-                                  getResources().getDrawable(R.drawable.infiniti_mall_mumbai), 4.2f,"022 4244 0000"));
-        myDataSet.add(new Places("Oberoi Mall",null,"https://www.oberoimall.com",
-                                 "Oberoi Garden City, Western Express Hwy, Yashodham, Goregaon East, Mumbai, Maharashtra 400063",
-                                  getResources().getDrawable(R.drawable.oberoi_mall_mumbai), 4.4f,"022 4099 0888"));
+        myDataSet.add(new Places(getResources().getStringArray(R.array.Inorbit_Mall)[0],
+                getResources().getStringArray(R.array.Inorbit_Mall)[1],
+                getResources().getStringArray(R.array.Inorbit_Mall)[2],
+                getResources().getDrawable(R.drawable.inorbit_mall_mumbai),
+                4.3F, getResources().getStringArray(R.array.Inorbit_Mall)[3]));
+        myDataSet.add(new Places(getResources().getStringArray(R.array.Phoenix_Mall)[0],
+                getResources().getStringArray(R.array.Phoenix_Mall)[1],
+                getResources().getStringArray(R.array.Phoenix_Mall)[2],
+                getResources().getDrawable(R.drawable.high_street_phoenix_market_mumbai),
+                4.5f,getResources().getStringArray(R.array.Phoenix_Mall)[3]));
+        myDataSet.add(new Places(getResources().getStringArray(R.array.City_Mall)[0],
+                getResources().getStringArray(R.array.City_Mall)[1],
+                getResources().getStringArray(R.array.City_Mall)[2],
+                getResources().getDrawable(R.drawable.r_city_mall_mumbai),
+                4.5f, getResources().getStringArray(R.array.City_Mall)[3]));
+        myDataSet.add(new Places(getResources().getStringArray(R.array.Infiniti_Mall)[0],
+                getResources().getStringArray(R.array.Infiniti_Mall)[1],
+                getResources().getStringArray(R.array.Infiniti_Mall)[2],
+                getResources().getDrawable(R.drawable.infiniti_mall_mumbai),
+                4.2f, getResources().getStringArray(R.array.Infiniti_Mall)[3]));
+        myDataSet.add(new Places(getResources().getStringArray(R.array.Oberoi_Mall)[0],
+                getResources().getStringArray(R.array.Infiniti_Mall)[1],
+                getResources().getStringArray(R.array.Infiniti_Mall)[2],
+                getResources().getDrawable(R.drawable.oberoi_mall_mumbai),
+                4.4f, getResources().getStringArray(R.array.Infiniti_Mall)[3]));
     }
 }

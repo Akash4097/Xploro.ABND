@@ -24,10 +24,10 @@ class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        public TextView textView,ratingValue;
+        public TextView textView, ratingValue;
         public ImageView imageView;
         public RatingBar ratingBar;
-        public Button buttonMore,buttonWeb,buttonDirection,buttonPhone;
+        public Button buttonMore, buttonWeb, buttonDirection, buttonPhone;
         public RelativeLayout hiddenLayout;
 
         public ViewHolder(View itemView) {
@@ -50,12 +50,12 @@ class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
 
         @Override
         public void onClick(View v) {
-            if(v.getId() == buttonMore.getId()){
+            if (v.getId() == buttonMore.getId()) {
                 if (getAdapterPosition() == RecyclerView.NO_POSITION) {
                     return;
                 }
 
-                if(!data.get(getAdapterPosition()).isSelected()){
+                if (!data.get(getAdapterPosition()).isSelected()) {
                     previous_position = selected_position;
                     selected_position = getAdapterPosition();
 
@@ -65,14 +65,13 @@ class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
                     notifyItemChanged(previous_position);
                     notifyItemChanged(selected_position);
 
-                }
-                else{
+                } else {
                     data.get(selected_position).setSelected(false);
                     notifyItemChanged(selected_position);
                 }
             }
 
-            if(v.getId() == buttonWeb.getId()){
+            if (v.getId() == buttonWeb.getId()) {
                 Uri webpage = Uri.parse(data.get(getAdapterPosition()).getWebAddress());
                 Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
                 if (intent.resolveActivity(v.getContext().getPackageManager()) != null) {
@@ -80,24 +79,22 @@ class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
                 }
             }
 
-            if(v.getId() == buttonDirection.getId()){
-                Uri gmmIntentUri = Uri.parse("geo:0,0?q="+data.get(getAdapterPosition()).getPhysicalAddress());
+            if (v.getId() == buttonDirection.getId()) {
+                Uri gmmIntentUri = Uri.parse(v.getContext().getResources().getString(R.string.geo_data) + data.get(getAdapterPosition()).getPhysicalAddress());
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-                if(mapIntent.resolveActivity(v.getContext().getPackageManager()) != null){
-                    mapIntent.setPackage("com.google.android.apps.maps");
+                if (mapIntent.resolveActivity(v.getContext().getPackageManager()) != null) {
+                    mapIntent.setPackage(v.getContext().getResources().getString(R.string.package_name));
                     v.getContext().startActivity(mapIntent);
-                }
-                else{
-                    Toast toast = Toast.makeText(v.getContext(),"You Don't have specific app to open this intent",Toast.LENGTH_SHORT);
+                } else {
+                    Toast toast = Toast.makeText(v.getContext(), R.string.warning_msg, Toast.LENGTH_SHORT);
                     toast.show();
                 }
 
             }
 
-
-            if(v.getId() == buttonPhone.getId()){
+            if (v.getId() == buttonPhone.getId()) {
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:" + data.get(getAdapterPosition()).getPhone()));
+                intent.setData(Uri.parse(v.getContext().getResources().getString(R.string.phone_prefix) + data.get(getAdapterPosition()).getPhone()));
                 if (intent.resolveActivity(v.getContext().getPackageManager()) != null) {
                     v.getContext().startActivity(intent);
                 }
@@ -124,10 +121,9 @@ class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
         holder.ratingBar.setRating(hotels.getRatings());
         holder.ratingValue.setText("(" + hotels.getRatings() + ")");
 
-        if(hotels.isSelected()){
+        if (hotels.isSelected()) {
             holder.hiddenLayout.setVisibility(View.VISIBLE);
-        }
-        else {
+        } else {
             holder.hiddenLayout.setVisibility(View.GONE);
         }
 

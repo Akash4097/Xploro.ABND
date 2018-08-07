@@ -27,21 +27,19 @@ public class MainActivity extends AppCompatActivity {
         initializeData();
         adapter = new MainAdapter(myDataSet);
         recyclerView.setAdapter(adapter);
-
     }
 
     private void initializeData() {
-        myDataSet.add(new City("Mumbai",getResources().getDrawable(R.drawable.gateway)));
-        myDataSet.add(new City("Delhi",getResources().getDrawable(R.drawable.india_gate)));
-        myDataSet.add(new City("Bangalore",getResources().getDrawable(R.drawable.bangalore)));
-        myDataSet.add(new City("Kolkata",getResources().getDrawable(R.drawable.kolkata_victoria)));
-        myDataSet.add(new City("Chennai",getResources().getDrawable(R.drawable.chennai)));
-        myDataSet.add(new City("Agra",getResources().getDrawable(R.drawable.agra)));
-        myDataSet.add(new City("Ahmedabad",getResources().getDrawable(R.drawable.ahemdabad)));
-        myDataSet.add(new City("Hyderabad",getResources().getDrawable(R.drawable.hyderabad)));
-        myDataSet.add(new City("Surat",getResources().getDrawable(R.drawable.surat)));
-        myDataSet.add(new City("Pune",getResources().getDrawable(R.drawable.pune)));
-        myDataSet.add(new City("Bhopal",getResources().getDrawable(R.drawable.bhopal)));
-
+        myDataSet.add(new City(getResources().getStringArray(R.array.cities)[0],getResources().getDrawable(R.drawable.gateway)));
+        myDataSet.add(new City(getResources().getStringArray(R.array.cities)[1],getResources().getDrawable(R.drawable.india_gate)));
+        myDataSet.add(new City(getResources().getStringArray(R.array.cities)[2],getResources().getDrawable(R.drawable.bangalore)));
+        myDataSet.add(new City(getResources().getStringArray(R.array.cities)[3],getResources().getDrawable(R.drawable.kolkata_victoria)));
+        myDataSet.add(new City(getResources().getStringArray(R.array.cities)[4],getResources().getDrawable(R.drawable.chennai)));
+        myDataSet.add(new City(getResources().getStringArray(R.array.cities)[5],getResources().getDrawable(R.drawable.agra)));
+        myDataSet.add(new City(getResources().getStringArray(R.array.cities)[6],getResources().getDrawable(R.drawable.ahemdabad)));
+        myDataSet.add(new City(getResources().getStringArray(R.array.cities)[7],getResources().getDrawable(R.drawable.hyderabad)));
+        myDataSet.add(new City(getResources().getStringArray(R.array.cities)[8],getResources().getDrawable(R.drawable.surat)));
+        myDataSet.add(new City(getResources().getStringArray(R.array.cities)[9],getResources().getDrawable(R.drawable.pune)));
+        myDataSet.add(new City(getResources().getStringArray(R.array.cities)[10],getResources().getDrawable(R.drawable.bhopal)));
     }
 }
